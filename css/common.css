@@ -9,6 +9,8 @@ body {
     min-width: 320px;
 }
 
+/* text */
+
 p {
     font-weight: 400;
     font-family: 'Arial';
@@ -60,6 +62,8 @@ a {
     color: #CDCDCD;
 }
 
+/* buttons */
+
 .button {
     display: inline-block;
     font-family: 'Georgia';
@@ -69,6 +73,8 @@ a {
     line-height: 130%;
     letter-spacing: 0.06em;
     border-radius: 100px;
+    padding: 15px 45px;
+    background-color: transparent;
 }
 
 .primary {
@@ -78,4 +84,69 @@ a {
 
 .button:hover, .primary:hover {
     background: #FDDCC4;
+}
+
+.secondary {
+    border: 2px solid #F1CDB3;
+}
+
+/* slider */
+
+/*slides*/
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 52px;
+}
+
+.slides {
+    display: flex;
+    gap: 90px;
+}
+
+/* cards */
+
+.card {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    color: #545454;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.card:hover .secondary {
+    background: #FDDCC4;
+    border: #FDDCC4
+
+}
+
+/* arrow buttons */
+
+.round-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 19px;
+    width: 52px;
+    height: 52px;
+    left: 70px;
+    top: 555px;
+    background-color: transparent;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.round-button:hover {
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
 }
