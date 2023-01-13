@@ -84,6 +84,7 @@ a {
 
 .button:hover, .primary:hover {
     background: #FDDCC4;
+    cursor: pointer;
 }
 
 .secondary {
