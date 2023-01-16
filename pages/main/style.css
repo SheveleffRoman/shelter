@@ -144,3 +144,37 @@ margin-bottom: 40px;
 .pets .button.primary {
     margin-bottom: 100px;
 }
+
+/* help */
+
+.help {
+    background-color: #FFFFFF;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: 81px;
+}
+
+.help-content h2{
+    margin-bottom: 57px;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 119px;
+    row-gap: 36px;
+}
+
+.icon-list .icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
