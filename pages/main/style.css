@@ -67,7 +67,7 @@ header {
 
 .start-screen {
     background: url(../../assets/images/start-screen-background.jpg);
-    background: url(../../assets/images/start-screen-gradient-background.png) center/cover  ;
+    background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
 }
 
 .start-screen-content {
@@ -177,4 +177,125 @@ margin-bottom: 40px;
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.1s;
+}
+
+/* donation */
+
+.donation {
+    background-color: #F6F6F6;
+    padding-top: 81px;
+    padding-bottom: 90px;
+}
+
+.donation-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.donation-picture {
+    margin-top: 10px;
+}
+
+.donation-content {
+    width: 380px;
+}
+
+.donation h2{
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+
+.donation h5{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #545454;
+}
+
+.credit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 349px;
+    height: 43px;
+    border-radius: 9px;
+    border: none;
+    background: #F1CDB3;
+    gap: 14px;
+}
+
+.credit-card:hover {
+    cursor: pointer;
+    background-color: #FDDCC4;
+}
+
+.credit-card-icon {
+    height: 23px;
+}
+
+.credit-card h4 {
+    color: #545454;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+.legal-info {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+    margin-top: 20px;
+}
+
+/* footer */
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 160px;
+    padding-top: 27px;
+}
+
+footer {
+    background: url(../../assets/images/start-screen-background.jpg);
+    background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    width: 280px;
+    margin-bottom: 0;
+}
+
+footer h4 {
+    color: #F1CDB3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-picture {
+    padding-top: 40px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.footer-locations {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.email, .phone, .location-boston, .location-london {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
