@@ -1,8 +1,8 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 body {
@@ -134,6 +134,7 @@ a {
 .round-button {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 23px 19px;
     width: 52px;
@@ -143,11 +144,64 @@ a {
     background-color: transparent;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
-    justify-content: center;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .round-button:hover {
     background-color: #FDDCC4;
     border: 2px solid #FDDCC4;
+}
+
+/* footer */
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 160px;
+    padding-top: 27px;
+}
+
+footer {
+    background: url(../../assets/images/start-screen-background.jpg);
+    background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    width: 280px;
+    margin-bottom: 0;
+}
+
+footer h4 {
+    color: #F1CDB3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-picture {
+    padding-top: 40px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.footer-locations {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.email, .phone, .location-boston, .location-london {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
