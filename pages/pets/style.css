@@ -110,3 +110,9 @@ header .wrapper {
     margin-top: 10px;
     margin-bottom: 101px;
 }
+/* footer */
+
+footer {
+    background: url(../../assets/images/start-screen-background.jpg);
+    background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
+}
