@@ -5,12 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our pets</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="georgia.ttf" />
-    <link rel="stylesheet" href="arialmt.ttf" />
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../pages/pets/style.css">
+    <link rel="stylesheet" href="georgia.ttf">
+    <link rel="stylesheet" href="arialmt.ttf">
 </head>
 <body>
-    <p>Soon...</p>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="../../pages/main/index.html" class="logo-title">Cozy House</a>
+                <p class="logo-subtitle">Shelter for pets in Boston</p>
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="../main/index.html" >About the shelter</a></li>
+                    <li class="active"><a href="../pets/index.html">Our pets</a></li>
+                    <li><a href="../main/index.html#help">Help the shelter</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="our-pets">
+        <div class="wrapper">
+            <div class="our-pets-content">
+                <h2>Our friends who<br>
+                    are looking for a house</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="../../assets/images/pets-katrine.png" alt="cat Katrine">
+                        <h3>Katrine</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-jennifer.png" alt="cat Jennifer">
+                        <h3>Jennifer</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-woody.png" alt="dog Woody">
+                        <h3>Woody</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-sophia.png" alt="cat Sophia">
+                        <h3>Katrine</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-timmy.png" alt="cat Timmy">
+                        <h3>Jennifer</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-charly.png" alt="dog Charly">
+                        <h3>Woody</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-scarlet.png" alt="dog Scarlett">
+                        <h3>Katrine</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/pets-freddie.png" alt="cat Freddie">
+                        <h3>Jennifer</h3>
+                        <button class="button secondary">Learn more</button>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="round-button button-round-inactive pagination" id="go-first-page"><h4><<</h4></button>
+                    <button class="round-button button-round-inactive pagination" id="go-previous"><h4><</h4></button>
+                    <button class="round-button button-round-active pagination" id="actual-page"><h4>1</h4></button>
+                    <button class="round-button pagination" id="go-next"><h4>></h4></button>
+                    <button class="round-button pagination" id="go-last-page"><h4>>></h4></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="contacts" id="contacts">
+        <div class="wrapper">
+            <div class="footer-container">
+                <div class="footer-contacts">
+                    <h2>For questions and suggestions</h2>
+                    <div class="email">
+                        <div class="email-icon">
+                            <img src="../../assets/icons/mail.svg" alt="email">
+                        </div>
+                        <a href="mailto:email@shelter.com"><h4>email@shelter.com</h4></a>
+                    </div>
+                    <div class="phone">
+                        <div class="phone-icon">
+                            <img src="../../assets/icons/phone.svg" alt="phone">
+                        </div>
+                        <a href="tel:+136745677554"><h4>+13 674 567 75 54</h4></a>
+                    </div>
+                </div>
+                <div class="footer-locations">
+                    <h2>We are waiting for your visit</h2>
+                    <div class="location-boston">
+                        <div class="location-icon">
+                            <img src="../../assets/icons/pin.svg" alt="pin">
+                        </div>
+                        <a href="https://goo.gl/maps/CUBLYRmwvX8hmqMG6"><h4>1 Central Street, Boston<br> (entrance from the store)</h4></a>
+                    </div>
+                    <div class="location-london">
+                        <div class="location-icon">
+                            <img src="../../assets/icons/pin.svg" alt="pin">
+                        </div>
+                        <a href="https://goo.gl/maps/undb82ByfMrzzro49"><h4>18 South Park, London </h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-picture">
+                <img src="../../assets/images/footer-puppy.png" alt="puppy">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
