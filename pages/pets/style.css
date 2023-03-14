@@ -116,3 +116,78 @@ footer {
     background: url(../../assets/images/start-screen-background.jpg);
     background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
 }
+
+/* media */
+
+@media screen and (max-width: 1279.9px) and (min-width: 768px) {
+    /* .cards-container {
+        justify-content: center;
+        margin-bottom: 23px;
+        row-gap: 30px;
+        column-gap: 38px;
+    } */
+
+    .cards-container {
+        display: grid;
+        grid-auto-rows: 0;
+        grid-auto-columns: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        overflow: hidden;
+        column-gap: 38px;
+        margin-bottom: 0;
+    }
+
+    .navigation {
+        margin-top: 4px;
+    }
+
+    .our-pets-content {
+        padding: 0;
+    }
+
+    .our-pets-content h2 {
+        margin-bottom: 29px;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .our-pets-content h2 {
+        margin-bottom: 29px;
+        margin-top: 80px;
+    }
+
+    footer .wrapper {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 21px;
+        padding-top: 5px;
+    }
+
+    .footer-picture {
+        align-self: center;
+        padding-top: 57px;
+    }
+
+    .navigation {
+        margin-bottom: 77px;
+    }
+
+    footer h2 {
+        margin-top: 25px;
+        margin-left: -3px;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    
+}
