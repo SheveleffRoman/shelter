@@ -145,6 +145,34 @@ margin-bottom: 40px;
     margin-bottom: 100px;
 }
 
+
+/* 
+slider and slides
+*/
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 52px;
+}
+
+/* .slides {
+    display: flex;
+    gap: 90px;
+} */
+
+.slides {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 435px;
+    overflow: hidden;
+    column-gap: 90px;
+    grid-auto-rows: 0;
+    grid-auto-columns: 0;
+}
+
 /* help */
 
 .help {
@@ -298,4 +326,346 @@ footer h4 {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+/* media */
+
+@media screen and (max-width: 1279.9px) and (min-width: 768px) {
+    .slides {
+        display: grid;
+        grid-template-columns: 270px 270px;
+        column-gap: 5.2083vw;
+    }
+
+    header {
+        padding: 30px 0 30px;
+    }
+
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .start-screen-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-container {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    .content-container .primary {
+        margin-left: 125px;
+        margin-top: 2px;
+    }
+
+    .start-screen-puppy {
+        width: 80%;
+        align-self: flex-end;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 65px;
+    }
+
+    .about-content {
+        margin-bottom: 55px;
+    }
+
+    .pets h2 {
+        margin-top: 40px;
+    }
+
+    .slider {
+        gap: 12px;
+    }
+
+    .icon-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        row-gap: 35px;
+    }
+
+    .donation-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .donation-picture {
+        margin-top: 17px;
+    }
+
+    footer .wrapper {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 17px;
+        padding-top: 7px;
+    }
+
+    .footer-picture {
+        align-self: center;
+        padding-top: 57px;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    .navigation-menu {
+        display: none;
+    }
+
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    
+    header {
+        padding: 30px 0;
+    }  
+
+    h1 {
+        width: 70%;
+        margin: 29px auto 41px;
+    }
+
+    h1, h2 {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+    }
+
+    .start-screen-content, .content-container, .about-container, .pets .wrapper, .donation-dog, .slides {
+        flex-direction: column;
+    }
+
+    .content-container {
+        margin-top: 0;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .donation-content, .credit-card, .content-container, .content-box, .about-content, .legal-info {
+        width: 100%;
+    }
+
+    .start-screen-puppy {
+        width: 89%;
+        align-self: flex-end;
+    }
+
+    .about-container {
+        flex-flow: column-reverse wrap;
+        text-align: justify;
+        margin-top: 27px;
+        margin-bottom: 44px
+    }
+
+    .about-container.wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .about-content {
+        padding-bottom: 20px;
+    }
+
+    .about h2 {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .about-pets {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-pets img {
+        width: auto;
+        max-width: 95%;
+}
+
+
+    .card:not(:first-child) {
+    display: none;
+    }
+
+    .pets {
+        padding-top: 20px;
+    }
+
+    .pets .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .pets h2 {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    .slider {
+        width: 270px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0;
+        margin-bottom: 41px;
+    }
+
+    .slides {
+        order: 1;
+    }
+
+    .slider-button {
+        order: 2;
+    }
+
+    .round-button {
+        margin-top: 20px;
+    }
+
+    .pets .button.primary {
+        margin-bottom: 12px;
+    }
+
+    .help-content h2 {
+        margin-bottom: 42px;
+    }
+
+    .help-content {
+        margin-bottom: 25px;
+    }
+
+    .icon-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        row-gap: 12.5px;
+        column-gap: 21px;
+    }
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon h3 {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+
+    .donation {
+        padding-bottom: 42px;
+        padding-top: 42px;
+    }
+
+    .donation .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .donation-container {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .donation-picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-picture img {
+        width: 93%;
+    }
+
+    .donation-content {
+        margin-bottom: 20px;
+    }
+
+    .donation h2, .donation h5 {
+        margin-bottom: 23px;
+    }
+
+    .credit-card h4 {
+        font-size: 15px;
+    }
+
+    .legal-info {
+        text-align: justify;
+    }
+
+    .donation h2, h5 {
+        text-align: center;
+    }
+
+    h5 {
+        letter-spacing: 0;
+    }
+
+    footer .wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        padding-top: 10px;
+        gap: 36px;
+    }
+
+    .footer-container, footer .wrapper {
+        flex-direction: column;
+    }
+
+
+    .footer-picture {
+        display: flex;
+        justify-content: center;
+        padding-top: 38px;
+    }
+
+    .footer-contacts {
+        align-items: center;
+        gap: 0;
+    }
+
+    footer h2 {
+        text-align: center;
+        margin-bottom: 38px;
+        padding: 0 12px;
+    }
+
+    .email {
+        margin-bottom: 41px;
+    }
+
+    .footer-locations {
+        gap: 38px;
+    }
+
+    .footer-locations h2 {
+        margin: 0 auto;
+    }
+
+    .footer-picture {
+        display: flex;
+        justify-content: center;
+        padding-top: 38px;
+    }
+
+    .footer-picture img {
+        width: 86%;
+    }
+
+
+    
 }
