@@ -221,6 +221,8 @@ footer h4 {
     display: none;
 }
 
+
+
 @media screen and (max-width: 767.9px) {
 .burger {
     right: 53px;
@@ -238,5 +240,83 @@ footer h4 {
     border: 1px solid #F1CDB3;
     width: 28px;
     height: 0;
+}
+
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    transition: right 0.5s;
+}
+
+.show {
+    right: 0;
+}
+
+.mobile-menu {
+    background-color: #292929;
+    z-index: 4;
+}
+
+.mobile-menu .logo {
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mobile-menu ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu li {
+    text-align: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    margin: 18px 0;
+    display: inline-flex;
+}
+
+.mobile-menu li.active {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.mobile-menu .logo-title {
+    color: #F1CDB3;
+}
+
+.mobile-menu .logo-subtitle {
+    color: #FFFFFF;
+}
+
+.mobile-menu li.active {
+    color: #FAFAFA;
+}
+
+.reverse .line {
+    border: 1px solid #F1CDB3;
+}
+
+.reverse {
+    z-index: 5;
+    transition-duration: 0.5s;
+    transform: rotate(-90deg);
 }
 }
