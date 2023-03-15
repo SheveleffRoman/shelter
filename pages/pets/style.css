@@ -189,5 +189,113 @@ footer {
 }
 
 @media screen and (max-width: 767.9px) {
-    
-}
+    .navigation-menu {
+        display: none;
+    }
+
+    .line {
+        border: 1px solid #292929;
+    }
+
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1, h2 {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+    }
+
+    header {
+        display: flex;
+        padding: 30px 0px;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .our-pets-content {
+        padding-top: 141px;
+    }
+
+    .our-pets-content h2 {
+        margin-bottom: 40px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-auto-rows: 0;
+        grid-auto-columns: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        overflow: hidden;
+        margin-bottom: 0;
+        row-gap: 31px;
+        }
+
+    .card:not(:nth-child(1),:nth-child(2), :nth-child(3)) {
+        display: none;
+    }
+
+    .navigation {
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 42px;
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    footer .wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        padding-top: 10px;
+        gap: 36px;
+        flex-direction: column;
+    }
+
+
+    .footer-picture {
+        display: flex;
+        justify-content: center;
+        padding-top: 38px;
+    }
+
+    .footer-contacts {
+        align-items: center;
+        gap: 0;
+    }
+
+    footer h2 {
+        text-align: center;
+        margin-bottom: 38px;
+        padding: 0 12px;
+    }
+
+    .email {
+        margin-bottom: 41px;
+    }
+
+    .footer-locations {
+        gap: 38px;
+    }
+
+    .footer-locations h2 {
+        margin: 0 auto;
+    }
+
+    .footer-picture {
+        display: flex;
+        justify-content: center;
+        padding-top: 38px;
+    }
+
+    .footer-picture img {
+        width: 86%;
+    }
+
+    }
