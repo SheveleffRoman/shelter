@@ -196,14 +196,6 @@ footer h4 {
 
 /* mobile menu */
 
-.blackout {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: #2929299a;
-}
-
 .mobile-menu {
     background-color: #292929;
     display: flex;
@@ -319,4 +311,8 @@ footer h4 {
     transition-duration: 0.5s;
     transform: rotate(-90deg);
 }
+}
+
+.color {
+    font-size: 50px;
 }
