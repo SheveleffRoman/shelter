@@ -6,12 +6,21 @@ const body = document.body;
 
 // для каждой карточки мы ставим слушатель клика
 
-cards.forEach( elem => elem.addEventListener('click', () => {
-    blackout.classList.add('view');
-    modalWindowContainer.classList.add('modalView');
-    body.classList.add('noScroll');
-    changeCardInfo(elem);
-}));
+// cards.forEach( elem => elem.addEventListener('click', () => {
+//     blackout.classList.add('view');
+//     modalWindowContainer.classList.add('modalView');
+//     body.classList.add('noScroll');
+//     changeCardInfo(elem);
+// }));
+
+cards.forEach((elem) => {
+    elem.addEventListener('click', () => {
+        blackout.classList.add('view');
+        modalWindowContainer.classList.add('modalView');
+        body.classList.add('noScroll');
+        changeCardInfo(elem);
+    })
+})
 
 modalCloseBtn.addEventListener('click', () => {
     blackout.classList.remove('view');
@@ -29,6 +38,7 @@ blackout.addEventListener('click', () => {
 // функция для замены модульного окна
 function changeCardInfo(elem) {
     let i = elem.id - 1;
+    console.log(i);
     modalWindow.innerHTML = `
     <img class='main-pic' src="${pets_array[i].img}">
     <div class="modal-content">
