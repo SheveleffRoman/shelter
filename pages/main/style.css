@@ -6,6 +6,7 @@ header {
     padding: 60px 0 60px;
 }
 
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@ header {
 
 .logo-title {
     color: #F1CDB3;
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 110%;
@@ -24,7 +25,7 @@ header {
 
 .logo-subtitle {
     color: #FFFFFF;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -50,7 +51,7 @@ header {
 
 .navigation-menu li {
     color: white;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -63,10 +64,29 @@ header {
     color: #FAFAFA;
 }
 
+/* blackout */
+
+.blackout {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #292929;
+    opacity: 60%;
+}
+
+
+.view {
+    display: flex;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
 /* start screen content and background */
 
 .start-screen {
-    background: url(../../assets/images/start-screen-background.jpg);
     background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
 }
 
@@ -575,7 +595,7 @@ footer h4 {
 
     .donation-container {
         flex-direction: column-reverse;
-        gap: 0px;
+        gap: 0;
     }
 
     .donation-picture {

@@ -1,0 +1,103 @@
+/** {*/
+/*    box-sizing: border-box;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/* исправить стили модального окна!!!
+
+/*li {*/
+/*    font-family: Georgia;*/
+/*    font-size: 15px;*/
+/*    font-weight: 400;*/
+/*    line-height: 17px;*/
+/*    letter-spacing: 0.06em;*/
+/*    text-align: left;*/
+/*}*/
+
+/*h5 {*/
+/*    margin-top: 0px;*/
+/*    line-height: 16.9px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*h3 {*/
+/*    margin-top: 0px;*/
+/*    margin-bottom: 41px;*/
+/*}*/
+
+/*ul {*/
+/*    padding-top: 20px;*/
+/*    padding-left: 15px;*/
+/*}*/
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    z-index: -1;
+    opacity: 0;
+
+}
+/* показываем модальное окно */
+.modalView {
+    z-index: 10;
+    opacity: 100%;
+}
+
+.modal-window {
+    display: flex;
+    background: #FAFAFA;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+img.main-pic {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.modal-content {
+    width: 351px;
+    height: 362px;
+}
+
+.modal-content {
+    padding-left: 30px;
+    padding-top: 21px;
+    padding-right: 16px;
+}
+
+
+
+.modal-close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #F1CDB3;
+    cursor: pointer;
+    top: -50px;
+    right: -45px;
+}
+
+.modal-close-button:hover {
+    background-color: #F1CDB3 !important;
+}
+
+.modalView:hover .modal-close-button {
+    background-color: transparent;
+    cursor: pointer;
+}
