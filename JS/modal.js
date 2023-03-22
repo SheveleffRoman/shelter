@@ -10,7 +10,7 @@ cards.forEach( elem => elem.addEventListener('click', () => {
     blackout.classList.add('view');
     modalWindowContainer.classList.add('modalView');
     body.classList.add('noScroll');
-    let cardChange = changeCardInfo(elem);
+    changeCardInfo(elem);
 }));
 
 modalCloseBtn.addEventListener('click', () => {
