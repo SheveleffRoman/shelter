@@ -100,7 +100,7 @@ const pets_array = [
 
 
 const cards = document.querySelectorAll('div.card');
-// console.log(cards);
+console.log(cards);
 
 const buttonPrevSlide = document.getElementById('previous-slide');
 // console.log(buttonSelectLeft);
@@ -146,14 +146,16 @@ function insertNewCards() {
     for (let i = 0; i < cards.length; i++) {
         cards[i].innerHTML =
             `<img src="${ourNewCards[i].img}">
-            <h3>${ourNewCards[i].name} </h3>
+            <h3>${ourNewCards[i].name}</h3>
             <button class="button secondary">Learn more</button>`
-        cards[i].setAttribute('id', `'${ourNewCards[i].id}'`)
+        cards[i].setAttribute('id', `${ourNewCards[i].id}`)
     }
 }
 buttonPrevSlide.addEventListener('click', insertNewCards);
 buttonNextSlide.addEventListener('click', insertNewCards);
 document.addEventListener('DOMContentLoaded', insertNewCards);
+
+// модальное окно
 
 const modalCloseBtn = document.getElementById('close-button');
 const modalWindowContainer = document.querySelector('div.modal-container');
@@ -161,22 +163,8 @@ const blackout = document.querySelector('div.blackout');
 const modalWindow = document.querySelector('div.modal-window');
 const body = document.body;
 
-
-function cardClick() {
-    for (i=0;i<cards.length;i++) {
-        cards[i].onclick = function () {
-            getPopup();
-            let index = this.id - 1;
-            updateModalInfo(index);
-        }
-    }
-}
-
-cardClick();
-
-function updateModalInfo(i) {
-    modalWindow.innerHTML = `
-    <img class='main-pic' src="${pets_array[i].img}">
+const createModalWindow = function (i) {
+    modalWindow.innerHTML = `<img class='main-pic' src="${pets_array[i].img}">
      <div class="modal-content">
          <h2>${pets_array[i].name}</h2>
                  <h3>${pets_array[i].type} - ${pets_array[i].breed}</h3>
@@ -187,19 +175,24 @@ function updateModalInfo(i) {
                      <li>Diseases: ${pets_array[i].diseases}</li>
                      <li>Parasites: ${pets_array[i].parasites}</li>
                  </ul>
-             </div>`;
-}
+             </div>`
+};
 
-function getPopup() {
-    getModal();
-    modalWindow.classList.toggle('modalView');
-}
 
-function getModal() {
-    blackout.classList.add('view');
-    modalWindowContainer.classList.add('modalView');
-    body.classList.add('noScroll');
-}
+function openModal() {
+document.addEventListener("DOMContentLoaded", () => {
+    cards.forEach(element => {
+        element.addEventListener('click', () => {
+            let index = element.id - 1
+            createModalWindow(index);
+            blackout.classList.add('view');
+            modalWindowContainer.classList.add('modalView');
+            body.classList.add('noScroll');
+        })
+    })
+})}
+
+openModal();
 
 modalCloseBtn.addEventListener('click', () => {
     blackout.classList.remove('view');
