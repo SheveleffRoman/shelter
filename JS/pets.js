@@ -100,7 +100,7 @@ const pets_array = [
 
 
 const cards = document.querySelectorAll('div.card');
-console.log(cards);
+//console.log(cards);
 
 const buttonPrevSlide = document.getElementById('previous-slide');
 // console.log(buttonSelectLeft);
