@@ -4,32 +4,52 @@
 /*    padding: 0;*/
 /*}*/
 
-/* исправить стили модального окна!!!
+.modal-window h2 {
+    color: #000000;
+    font-family: 'Georgia', serif;
+    margin-bottom: 12px;
+}
 
-/*li {*/
-/*    font-family: Georgia;*/
-/*    font-size: 15px;*/
-/*    font-weight: 400;*/
-/*    line-height: 17px;*/
-/*    letter-spacing: 0.06em;*/
-/*    text-align: left;*/
-/*}*/
+.modal-window h5 {
+    margin-top: 0px;
+    line-height: 16.9px;
+    margin-bottom: 20px;
+}
 
-/*h5 {*/
-/*    margin-top: 0px;*/
-/*    line-height: 16.9px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
+.modal-window li {
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 11px;
+}
 
-/*h3 {*/
-/*    margin-top: 0px;*/
-/*    margin-bottom: 41px;*/
-/*}*/
+.modal-window h3 {
+    margin-top: 0px;
+    margin-bottom: 43px;
+}
 
-/*ul {*/
-/*    padding-top: 20px;*/
-/*    padding-left: 15px;*/
-/*}*/
+.modal-window ul {
+    padding-top: 20px;
+    padding-left: 15px;
+    list-style: none;
+}
+
+.modal-window ul li::before {
+    content: "\2022";
+    color: #F1CDB3;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+}
+
+.bold {
+    font-weight: bold;
+}
 
 .modal-container {
     display: flex;
@@ -67,14 +87,10 @@ img.main-pic {
 .modal-content {
     width: 351px;
     height: 362px;
-}
-
-.modal-content {
     padding-left: 30px;
     padding-top: 21px;
     padding-right: 16px;
 }
-
 
 
 .modal-close-button {
@@ -100,4 +116,130 @@ img.main-pic {
 .modalView:hover .modal-close-button {
     background-color: transparent;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1279.9px) and (min-width: 768px) {
+    .modal-container {
+        width: 682px;
+        height: 402px;
+    }
+
+    .modal-window {
+        width: 630px;
+        height: 350px;
+    }
+
+    img.main-pic {
+        width: 350px;
+        height: 350px;
+    }
+
+    .modal-content {
+        width: 260px;
+        height: 303px;
+        padding-left: 10px;
+        padding-top: 0;
+    }
+
+    .modal-window h2 {
+        margin-top: 11px;
+        margin-bottom: 10px;
+    }
+
+    .modal-window h3 {
+        margin-bottom: 20px;
+    }
+
+    .modal-window h5 {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+
+    .modal-close-button {
+        right: 5px;
+    }
+
+    .modal-window ul {
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 16px;
+    }
+
+    .modal-window li {
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    img.main-pic {
+        display: none;
+    }
+
+    .modal-container {
+        width: 270px;
+        height: 393px;
+    }
+
+    .modal-window {
+        width: 240px;
+        height: 341px;
+        display: flex;
+    }
+
+    .modal-close-button {
+        right: -8px;
+        top: -53px;
+
+    }
+
+    .modal-content {
+        width: 240px;
+        height: 321px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .modal-window > .modal-content > * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-window h2 {
+        font-size: 35px;
+        margin-bottom: 10px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-window h3 {
+        margin-bottom: 15px !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .modal-window ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 20px !important;
+    }
+
+    .modal-window li {
+        text-align: left;
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .modal-window h5 {
+        font-size: 13px;
+        text-align: justify;
+        padding: 0 8px !important;
+        line-height: 110%;
+        letter-spacing: 0.03em;
+        margin-bottom: 15px !important;
+    }
+
+
 }
