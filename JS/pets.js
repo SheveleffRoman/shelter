@@ -100,7 +100,7 @@ const pets_array = [
 
 
 const cards = document.querySelectorAll('div.card');
-//console.log(cards);
+// console.log(cards);
 
 const buttonPrevSlide = document.getElementById('previous-slide');
 // console.log(buttonSelectLeft);
@@ -154,3 +154,28 @@ function insertNewCards() {
 buttonPrevSlide.addEventListener('click', insertNewCards);
 buttonNextSlide.addEventListener('click', insertNewCards);
 document.addEventListener('DOMContentLoaded', insertNewCards);
+
+function slideLeftEffect() {
+    for (i=0;i<cards.length;i++) {
+        cards[i].classList.add('slider-left');
+    }
+    setTimeout(function() {
+        for (i=0;i<cards.length;i++) {
+            cards[i].classList.remove('slider-left');
+        } ;
+    }, 400);
+}
+
+function slideRightEffect() {
+    for (i=0;i<cards.length;i++) {
+        cards[i].classList.add('slider-right');
+    }
+    setTimeout(function() {
+        for (i=0;i<cards.length;i++) {
+            cards[i].classList.remove('slider-right');
+        } ;
+    }, 400);
+}
+
+buttonPrevSlide.addEventListener('click', slideRightEffect);
+buttonNextSlide.addEventListener("click", slideLeftEffect)
