@@ -226,6 +226,7 @@ footer h4 {
     cursor: pointer;
     transition: 0.5s;
     position: absolute;
+    z-index: 10;
 }
 
 .line {
@@ -234,6 +235,9 @@ footer h4 {
     height: 0;
 }
 
+.hiddenLogo {
+    opacity: 0;
+}
 
 .mobile-menu {
     display: flex;
@@ -246,13 +250,13 @@ footer h4 {
     transition: right 0.5s;
 }
 
-.show {
+.open-mobile {
     right: 0;
 }
 
 .mobile-menu {
     background-color: #292929;
-    z-index: 4;
+    z-index: 10;
 }
 
 .mobile-menu .logo {
@@ -307,7 +311,7 @@ footer h4 {
 }
 
 .reverse {
-    z-index: 5;
+    z-index: 10;
     transition-duration: 0.5s;
     transform: rotate(-90deg);
 }
