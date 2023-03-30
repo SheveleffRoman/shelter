@@ -20,7 +20,7 @@ header .wrapper {
 
 .logo-title {
     color: #545454;
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 110%;
@@ -30,7 +30,7 @@ header .wrapper {
 
 .logo-subtitle {
     color: #292929;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -58,7 +58,7 @@ header .wrapper {
 
 .navigation-menu li {
     color: #545454;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -103,7 +103,7 @@ header .wrapper {
 
 /* pagination */
 
-.navigation {
+.pagination {
     display: flex;
     justify-content: space-between;
     width: 340px;
@@ -113,7 +113,6 @@ header .wrapper {
 /* footer */
 
 footer {
-    background: url(../../assets/images/start-screen-background.jpg);
     background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
 }
 
@@ -138,7 +137,7 @@ footer {
         margin-bottom: 0;
     }
 
-    .navigation {
+    .pagination {
         margin-top: 4px;
     }
 
@@ -178,7 +177,7 @@ footer {
         padding-top: 57px;
     }
 
-    .navigation {
+    .pagination {
         margin-bottom: 77px;
     }
 
@@ -209,7 +208,7 @@ footer {
 
     header {
         display: flex;
-        padding: 30px 0px;
+        padding: 30px 0;
         position: fixed;
         width: 100%;
         background-color: white;
@@ -239,7 +238,7 @@ footer {
         display: none;
     }
 
-    .navigation {
+    .pagination {
         gap: 10px;
         justify-content: center;
         margin-bottom: 42px;
