@@ -297,4 +297,31 @@ footer {
         width: 86%;
     }
 
+    .headerHidden {
+        z-index: 15;
+        background-color: transparent;
     }
+
+    .logoHidden {
+        z-index: -1;
+        opacity: 0;
+    }
+    }
+
+.blackout {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #292929;
+    opacity: 60%;
+}
+
+
+.view {
+    display: flex;
+}
+
+.noScroll {
+    overflow: hidden;
+}
