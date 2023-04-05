@@ -17,13 +17,13 @@ body {
 
 p {
     font-weight: 400;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-size: 15px;
     line-height: 160%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-weight: 400;
     line-height: 130%;
     font-style: normal;
@@ -70,7 +70,7 @@ a {
 
 .button {
     display: inline-block;
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -108,7 +108,7 @@ a {
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .card:hover .secondary {
@@ -141,6 +141,21 @@ a {
     border: 2px solid #FDDCC4;
 }
 
+.round-button:disabled {
+    border: 2px solid rgba(16, 16, 16, 0.1);
+}
+
+.round-button:disabled:hover {
+    background-color: transparent;
+}
+
+@-moz-document url-prefix() {
+    .round-button:disabled {
+        border: 2px solid rgba(16, 16, 16, 0.1);
+        color: rgba(16, 16, 16, 0.1);
+    }
+}
+
 /* footer */
 
 footer .wrapper {
@@ -156,7 +171,6 @@ footer .wrapper {
 }
 
 footer {
-    background: url(../../assets/images/start-screen-background.jpg);
     background: url(../../assets/images/start-screen-gradient-background.png) center/cover;
 }
 
@@ -236,7 +250,7 @@ footer h4 {
 }
 
 .hiddenLogo {
-    opacity: 0;
+    z-index: -1;
 }
 
 .mobile-menu {
@@ -281,7 +295,7 @@ footer h4 {
 
 .mobile-menu li {
     text-align: center;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -333,3 +347,4 @@ footer h4 {
     rotate: -20deg;
     opacity: 0;
     transition: 0.3s all ease-in-out;
+}
